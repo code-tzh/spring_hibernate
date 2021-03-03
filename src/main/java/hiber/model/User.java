@@ -22,7 +22,6 @@ public class User {
    public User() {}
 
    @OneToOne(cascade = CascadeType.ALL)
-   @JoinColumn(name = "car_id")
    private Car car;
 
    public User(String firstName, String lastName, String email) {
